@@ -1,0 +1,47 @@
+.bar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.buttons {
+  display: inline-flex;
+  background: #e5edff;
+  padding: 4px;
+  border-radius: 999px;
+  gap: 6px;
+}
+
+.chip {
+  min-width: 80px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: none;
+  font-size: 13px;
+  font-weight: 500;
+  background: transparent;
+  color: #334155;
+  cursor: pointer;
+  transition: background 0.12s ease, color 0.12s ease,
+    box-shadow 0.12s ease, transform 0.12s ease;
+}
+
+.chipActive {
+  background: #2563eb;
+  color: #ffffff;
+  box-shadow: 0 8px 18px rgba(37, 99, 235, 0.35);
+  transform: translateY(-1px);
+}
+
+.chip:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+@media (min-width: 640px) {
+  .bar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

@@ -1,0 +1,11 @@
+/* container that holds all task cards on the right */
+.grid {
+  /* center and limit width */
+  max-width: 1200px;
+  margin: 0 auto;
+
+  /* card layout */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 18px;
+}
